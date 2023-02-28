@@ -40,8 +40,13 @@
   width: 100%;
 }
 
+.input-wrapper {
+  margin-bottom: 32px;
+}
+
 .input {
   display: block;
+  margin: 0px !important;
   padding: 12px 14px;
   width: 100%;
   font-weight: 400;
@@ -51,6 +56,7 @@
   border: 1px solid #FFFFFF;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
+  outline: none;
 }
 
 .input-error {
@@ -63,6 +69,15 @@
 
 .input:last-child {
   margin-bottom: 6px;
+}
+
+.message {
+  display: none;
+  color: red;
+}
+
+.message--visible {
+  display: block;
 }
 
 .form-clue {
@@ -84,6 +99,17 @@
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
   cursor: pointer;
+}
+
+.form-button--disabled {
+  background-color: grey;
+  color: #FFFFFF;
+  cursor: inherit;
+}
+
+.form-button--disabled:hover {
+  background-color: grey !important;
+  color: #FFFFFF !important;
 }
 
 .form-button:hover {

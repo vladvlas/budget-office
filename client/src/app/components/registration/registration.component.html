@@ -7,14 +7,32 @@
       Начните работу прямо сейчас
     </p>
     <form class="form" [formGroup]="form" (ngSubmit)="send()">
-      <input type="text" class="input"
-             [class]="userName.errors?.required && userName.touched ? 'input-error' : null"  placeholder="Ваше имя" formControlName="userName">
-      <input type="email" class="input"
-             [class]="(email.errors?.email || email.errors?.required) && email.touched ? 'input-error' : null" placeholder="Почта" formControlName="email">
-      <p class="form-clue">
-        Нажимая кнопку “Отправить” вы соглашаетесь на обработку персональных данных
-      </p>
-      <button class="form-button" type="submit">
+      <div class="input-wrapper">
+        <input type="text" class="input"
+               [class]="userName.errors?.required && userName.touched ? 'input-error' : null"  placeholder="Ваше имя" formControlName="userName">
+        <p class="message"
+           [class]="userName.errors?.required && userName.touched ? 'message--visible' : null"
+        >Имя - обязательный параметр</p>
+      </div>
+      <div class="input-wrapper">
+        <input type="email" class="input"
+               [class]="(email.errors?.email || email.errors?.required) && email.touched ? 'input-error' : null" placeholder="Почта" formControlName="email">
+        <p class="message"
+           [class]="email.errors?.email && email.touched ? 'message--visible' : null"
+        >Невалидное значение почты</p>
+        <p class="message"
+           [class]="email.errors?.required && email.touched ? 'message--visible' : null"
+        >Почта - обязательный параметр</p>
+        <p class="form-clue">
+          Нажимая кнопку “Отправить” вы соглашаетесь на обработку персональных данных
+        </p>
+      </div>
+      <button
+        class="form-button"
+        [class]="userName.errors?.required || email.errors?.email || email.errors?.required ? 'form-button--disabled' : null"
+        type="submit"
+        [disabled]="userName.errors?.required || email.errors?.email || email.errors?.required"
+      >
         Зарегистрироваться
       </button>
     </form>
