@@ -1,0 +1,18 @@
+<div class="tariffs">
+  <div class="container tariffs-container">
+    <div class="tariffs-top">
+      <h3 class="tariffs-subtitle">
+        Тарифы
+      </h3>
+      <h2 class="tariffs-title">
+        Тарифы помогут сэкономить
+      </h2>
+      <p class="tariffs-description">
+        У нас возможности есть для каждого
+      </p>
+    </div>
+    <div class="tariffs-bottom">
+      <app-card *ngFor="let tariff of tariffs" [card]="tariff"></app-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+.tariffs {
+  margin-bottom: 118px;
+}
+
+.tariffs-top {
+  margin-bottom: 88px;
+}
+
+.tariffs-subtitle {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #4E4D9D;
+}
+
+.tariffs-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+
+.tariffs-description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #475467;
+}
+
+.tariffs-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 32px;
+}
+
+@media (max-width: 930px) {
+  .tariffs-subtitle {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .tariffs-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .tariffs-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .tariffs-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}

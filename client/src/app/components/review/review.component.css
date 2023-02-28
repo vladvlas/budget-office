@@ -1,0 +1,52 @@
+.review {
+  margin-bottom: 96px;
+}
+
+.review-container {
+  text-align: center;
+}
+
+.review-logo {
+  margin-bottom: 32px;
+}
+
+.review-text {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+
+.person-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.person-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #101828;
+}
+
+.person-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #475467;
+}
+
+@media (max-width: 853px) {
+  .review-text {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

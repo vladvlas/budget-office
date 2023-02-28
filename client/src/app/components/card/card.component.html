@@ -1,0 +1,42 @@
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title">
+      {{card.title}}
+    </h4>
+    <span *ngIf="card.isBestSeller" class="card-label">
+      Бестселлер
+    </span>
+  </div>
+  <div class="price">
+    <p class="price-count">
+      {{card.price}}
+      <span class="price-date">
+      {{card.date}}
+    </span>
+    </p>
+    <p class="price-description">
+      {{card.description}}
+    </p>
+  </div>
+  <div class="card-buttons">
+    <button class="button primal">
+      Приобрести тариф
+    </button>
+    <button class="button white">
+      Подробнее
+    </button>
+  </div>
+  <div class="card-possibilities">
+    <h5 class="list-title">
+      Возможности
+    </h5>
+    <ul class="card-list">
+      <li *ngFor="let possibility of card.possibilities" class="card-possibility">
+        {{possibility.title}}
+        <span class="card-possibility--add">
+          {{possibility.additional}}
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>

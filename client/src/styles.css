@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.button {
+  text-align: center;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button svg {
+  position: relative;
+  top: 5px;
+}
+
+.primal {
+  border: 1px solid #1719DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  background-color: #1719DD;
+}
+
+.primal:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+  transition: all .3s;
+}
+
+.secondary {
+  background-color: transparent;
+}
+
+.secondary:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+  transition: all .3s;
+}
+
+.white {
+  border: 1px solid #D0D5DD;
+  color: #344054;
+  background-color: #ffffff;
+}
+
+.white:hover {
+  color: #FFFFFF;
+  background-color: #1719DD;
+  transition: all .3s;
+  border: 1px solid #1719DD;
+}

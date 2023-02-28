@@ -1,0 +1,140 @@
+.footer {
+  padding: 0 5px;
+  background-color: #1C1C30;
+}
+
+.footer-top {
+  margin-bottom: 32px;
+  padding: 64px 0;
+  border-bottom: 1px solid #475467;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-title {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #D0D5DD;
+}
+
+.footer-link {
+  margin-bottom: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #EAECF0;
+}
+
+.footer-link:hover {
+  color: #4E4D9D;
+  transition: all .2s;
+}
+
+.footer-label {
+  padding: 2px 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 48px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  max-width: 142px;
+}
+
+.footer-logo:hover .footer-logo__text {
+  color: #4E4D9D;
+  transition: all .2s;
+}
+
+.footer-logo:hover svg path {
+  fill: #4E4D9D;
+  transition: all .2s;
+}
+
+.footer-logo__text {
+  margin-left: 7px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-copy {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #D0D5DD;
+}
+
+@media (max-width: 960px) {
+  .column-title {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .footer-link {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .footer-label {
+    padding: 2px 4px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 642px) {
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .footer-copy {
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 345px) {
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+

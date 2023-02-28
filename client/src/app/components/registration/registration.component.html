@@ -1,0 +1,22 @@
+<section class="registration" id="#registration">
+  <div class="registration-container container">
+    <h2 class="registration-title">
+      Быстрая регистрация в Сметном офисе
+    </h2>
+    <p class="registration-text">
+      Начните работу прямо сейчас
+    </p>
+    <form class="form" [formGroup]="form" (ngSubmit)="send()">
+      <input type="text" class="input"
+             [class]="userName.errors?.required && userName.touched ? 'input-error' : null"  placeholder="Ваше имя" formControlName="userName">
+      <input type="email" class="input"
+             [class]="(email.errors?.email || email.errors?.required) && email.touched ? 'input-error' : null" placeholder="Почта" formControlName="email">
+      <p class="form-clue">
+        Нажимая кнопку “Отправить” вы соглашаетесь на обработку персональных данных
+      </p>
+      <button class="form-button" type="submit">
+        Зарегистрироваться
+      </button>
+    </form>
+  </div>
+</section>
